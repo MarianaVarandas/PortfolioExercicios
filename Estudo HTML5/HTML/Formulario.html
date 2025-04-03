@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+</head>
+
+<body>
+   
+    <h1> Formulário de inscrição - "Fala, autista!"</h1>
+    <form method="post" action="teste.jsp">
+        Nome completo: <input type="text" name="Nome completo"> <br>
+        <br>
+        Data de Nascimento: <input type="date" name="nascimento"> <br>
+        <br>
+        Email: <input type="email" name="Email"> <br>
+        <br>
+        Já participou de alguma reunião? <br>
+            <input type="radio" name="participou?" value="SIM"> SIM
+            <input type="radio" name="participou?" value="NÃO"> NÃO <br>
+        <br>
+        Qual a sua identidade de gênero? <select>name="idgenero" <br> 
+            <option> Mulher Cis </option>
+            <option> Mulher Trans </option>
+            <option> Pessoa não-binária </option>
+            <option> Homem Trans </option>
+            <option> Homem Cis </option> </select> <br>
+        <br>
+        Quais outras condições você tem? <br>
+            <input type="checkbox" name="TDAH" value="sim"> TDAH 
+            <input type="checkbox" name="TAG" value="sim"> TAG 
+            <input type="checkbox" name="AHSD" value="sim"> AH/SD
+            <input type="checkbox" name="SED" value="sim"> SED <br>
+        <br>
+        Caso utilize CAA, por favor nos informe através de quais ferramentas você se comunica: <br>
+            <textarea name="caa" rows="5" cols="100"> </textarea> <br>
+        <br>
+        <br>
+        Certifique-se de ter preenchido todos os dados corretamente.
+        Antes de finalizar sua inscrição, <a href="https://vozautista.com/fala-autista">leia as regras do encontro.</a>
+        <br>
+            <input type="submit">
+
+    </form>
+</body>
+</html>

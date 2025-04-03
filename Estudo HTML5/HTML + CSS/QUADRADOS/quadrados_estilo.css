@@ -1,0 +1,32 @@
+.quadrado{
+    border: 5px ridge black;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    position:absolute;
+}
+
+.quadrado1{
+    left: 0px;
+    top: 0px;
+    background-color: darkgreen;
+}
+
+.quadrado2{
+    right: 0px;
+    top: 0px;
+    background-color: aqua;
+}
+
+.quadrado3{
+    bottom: 0px;
+    left: 0px;
+    background-color: brown;
+}
+
+.quadrado4{
+    right: 0px;
+    bottom: 0px;
+    background-color: blue;
+}
+

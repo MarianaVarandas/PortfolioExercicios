@@ -1,0 +1,19 @@
+.Alternada li:nth-child(even){
+    background-color: aqua;
+    list-style: square;
+    width: fit-content;
+    color: brown;
+    font-size: 25px;
+}
+
+.Alternada li:nth-child(odd){
+    background-color: yellow;
+    list-style: circle;
+    width: fit-content;
+    color: brown;
+    font-size: 25px;
+}
+   
+.Alternada li:hover{
+    font-weight: bolder;
+}

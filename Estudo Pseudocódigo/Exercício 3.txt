@@ -1,0 +1,23 @@
+3. Faça um programa que receba três notas de um estudante, calcule e
+mostre a média aritmética entre elas (este exercício é similar ao exemplo
+mostrado a neste capítulo, mas leva em consideração três notas e não
+quatro).
+
+
+Resposta:
+
+Algorítimo "Média do Aluno"
+
+var
+
+nota1, nota2, nota 3, nota_final: real
+
+inicio 
+
+leia nota1, nota2, nota 3
+
+nota_final <- (nota1 + nota 2 + nota 3) / 3
+
+escreva nota_final 
+
+fim

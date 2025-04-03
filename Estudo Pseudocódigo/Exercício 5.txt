@@ -1,0 +1,29 @@
+5. Faça um programa que receba o salário base de um funcionário, calcule
+e mostre o salário a receber, sabendo-se que o funcionário tem
+gratificação de 5% sobre o salário base (que será acrescentado ao
+salário) e paga imposto de 7% sobre este salário (o que será
+descontado do salário).
+
+
+Resposta:
+
+Algoritmo "Salário após gratificação e imposto"
+
+var
+sal_base, aumento, sal_grat, taxa, sal_final: real
+
+inicio
+
+leia sal_base
+
+aumento <- sal_base * 5/100
+
+sal_grat <- sal_base + aumento
+
+taxa <- sal_grat * 7/100
+
+sal_final <- sal_grat - taxa
+
+escreva sal_final
+
+fim

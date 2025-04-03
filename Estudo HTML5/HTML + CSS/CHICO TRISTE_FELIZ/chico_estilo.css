@@ -1,0 +1,11 @@
+.imagem{
+    background: url("chico\ triste.jpg") no-repeat;
+    width: 300px;
+    height: 200px;
+    display: block;
+    background-size: contain;
+}
+
+.imagem:hover{
+        background-image: url(Chico\ feliz.jpg);
+    }
