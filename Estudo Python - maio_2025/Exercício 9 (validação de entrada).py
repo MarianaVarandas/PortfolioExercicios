@@ -1,5 +1,5 @@
 #opção 1
-x = int(input("digite um valor negativo"))
+x = int(input("Digite um valor negativo"))
 while (x>=0):
     x = int(input("Digite um valor negativo"))
 print (f"Você digitou {x}")
