@@ -59,7 +59,7 @@ while (True):
             elif (sabor == "AC" and tam == "M"):
                 print ("Você pediu um Açaí tamanho M - R$16.00\n")
                 v = 16
-                soma = soma + 16
+                soma = soma + v
             elif (sabor == "AC" and tam == "G"):
                 print ("Você pediu um Açaí tamanho G - R$20.00\n")
                 v = 20
