@@ -1,0 +1,57 @@
+Dadas as regras de negócio abaixo listadas, referentes ao estudo de caso de uma
+Rede de Hotéis, elabore o Modelo Entidade-Relacionamento (MER), isto é, o modelo
+conceitual.
+O Modelo Entidade-Relacionamento (MER) deve contemplar os seguintes itens:
+• Entidades;
+• Atributos;
+• Relacionamentos;
+• Cardinalidades;
+• Chaves primárias;
+• Chaves estrangeiras.
+
+Uma Rede de Hotéis necessita controlar os dados dos funcionários, das unidades,
+dos quartos, dos hóspedes, das reservas e dos pagamentos. Para isso, contratou um
+profissional de Banco de Dados, a fim de modelar o Banco de Dados que armazenará
+todos os dados.
+As regras de negócio são:
+• Funcionário – Deverão ser armazenados os seguintes dados: CPF, nome, telefone,
+e-mail, login e senha;
+• Hotel – Deverão ser armazenados os seguintes dados: identificação do hotel,
+nome, categoria, telefone, e-mail e endereço, sendo o endereço composto por rua,
+número, complemento, bairro, CEP, cidade e estado;
+• Quarto – Deverão ser armazenados os seguintes dados: identificação do quarto,
+número de leitos, tipo (standard, luxo ou suíte), preço da diária e status (disponível,
+ocupado ou manutenção);
+
+• Hóspede – Deverão ser armazenados os seguintes dados: CPF, nome, telefone, e-
+mail e endereço, sendo o endereço composto por rua, número, complemento,
+
+bairro, CEP, cidade e estado;
+• Reserva – Deverão ser armazenados os seguintes dados: identificação da reserva,
+data de entrada, data de saída e status (ativa, cancelada ou concluída);
+
+Centro Universitário Internacional UNINTER
+Escola Superior Politécnica – ESP
+
+Banco de Dados: Trabalho - Orientações e Descrição
+
+4
+• Pagamento – Deverão ser armazenados os seguintes dados: identificação do
+pagamento, forma de pagamento (cartão, pix ou dinheiro), data do pagamento,
+valor total e status (pago ou pendente);
+• Um hotel possui um ou vários quartos;
+• Um ou vários funcionários trabalham em um hotel;
+• Um funcionário realiza uma ou várias reservas;
+• Um ou vários quartos fazem parte de uma ou várias reservas;
+• Um hóspede pode fazer uma ou várias reservas;
+• Uma reserva gera um pagamento.
+
+Importante:
+• O Modelo Entidade-Relacionamento (MER) deve considerar somente as regras de
+negócio dadas, não podendo ser criada nenhuma outra entidade ou atributo que
+não estejam nas regras de negócio;
+• Em caso de haver entidade associativa, a mesma deve ser representada pela
+“Representação 1” (texto da Aula 1 – Fundamentos de Banco de Dados, Figura
+25);
+• Em caso de haver cardinalidade (1,1), a chave estrangeira deve fazer parte da
+entidade que possui o maior número de chaves estrangeiras.
