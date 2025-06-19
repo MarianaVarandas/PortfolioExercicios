@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+</head>
+<body>
+    <form method="post" action="teste.jsp">
+    <fieldset> 
+        <legend> Formulário de inscrição - "Fala, autista!" </legend>
+            <fieldset>
+                <legend> Dados Pessoais </legend>
+                    <label for="nome"> Nome completo: </label> 
+                    <input type="text" id="nome" name="nome" placeholder="João da Silva"> <br>
+                    <br>
+                    <label for="nascimento"> Data de Nascimento: </label>
+                    <input type="date" id="nascimento" name="nascimento"> <br>
+                    <br>
+                    <label for="email"> Email: </label>
+                    <input type="email" id="email" name="email" placeholder="email@email.com"> <br>
+            </fieldset>
+        <br>
+        <label for="recorrente"> Já participou de alguma reunião? </label> <br>
+            <input type="radio" id="participou_sim" name="recorrente" value="SIM"> SIM
+            <input type="radio" id="participou_nao" name="recorrente" value="NÃO"> NÃO <br>
+        <br>
+        <label for="id_genero"> Qual a sua identidade de gênero? </label>
+        <select id="id_genero" name="id_genero"> <br> 
+            <option> Mulher Cis </option>
+            <option> Mulher Trans </option>
+            <option> Pessoa não-binária </option>
+            <option> Homem Trans </option>
+            <option> Homem Cis </option>
+        </select> <br>
+        <br>
+       Quais outras condições você tem?<br>
+            <input type="checkbox" id="TDAH" name="condicoes[]" value="TDAH">
+            <label for="TDAH"> TDAH </label> 
+            <input type="checkbox" id="TAG" name="condicoes[]" value="TAG">
+            <label for="TAG"> TAG </label>
+            <input type="checkbox" id="AHSD" name="condicoes[]" value="AHSD">
+            <label for="AHSD"> AH/SD </label>
+            <input type="checkbox" id="SED" name="condicoes[]" value="SED">
+            <label for="SED"> SED </label>            
+        <br>
+        <br>
+        <label for="caa"> Caso utilize CAA, por favor nos informe através de quais ferramentas você se comunica: </label> <br>
+            <textarea id="caa" name="caa" rows="5" cols="100"> </textarea> <br>
+        <br>
+        Certifique-se de ter preenchido todos os dados corretamente.
+        Antes de finalizar sua inscrição, <a href="https://vozautista.com/fala-autista">leia as regras do encontro.</a>
+        <br>
+            <input type="submit">
+    </fieldset>
+    </form>
+</body>
+</html>
