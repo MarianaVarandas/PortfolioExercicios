@@ -1,0 +1,22 @@
+
+ul{
+    list-style-type: none;
+    width: 200px;
+    text-decoration: none;
+}
+
+
+li {
+    display: block; 
+    color: red;
+    position: relative;
+    padding: 10px;
+}
+
+li ul {
+  display: none; /*escondendo a lista dentro da lista*/
+}
+
+li:hover ul {
+  display: block; /* mostrando a lista dentro da lista em bloco à passagem do cursor */
+}

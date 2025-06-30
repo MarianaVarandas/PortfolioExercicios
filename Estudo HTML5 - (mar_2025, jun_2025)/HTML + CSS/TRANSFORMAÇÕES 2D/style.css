@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: cornflowerblue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* TRANSLATE */
+#translate:hover {
+  transform: translate(-50px); /* quando negativo, vai para esquerda. Positivo para a direitaa*/
+}
+
+/* ROTATE */
+#rotate:hover {
+  transform: rotate(180deg); /*positivo horário. negativo anti horário*/
+}
+
+/* SCALE */
+#scale:hover {
+  transform: scale(1.5); /* aumenta 50% */
+}
+
+/* SKEW */
+#skew:hover {
+  transform: skew(20deg, 10deg); /* inclina nos eixos X e Y */
+}
