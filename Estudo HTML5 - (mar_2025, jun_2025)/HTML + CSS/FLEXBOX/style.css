@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;                 /* Ativa o Flexbox */
+  flex-direction: row;           /* itens alinhados na horizontal */
+  flex-wrap: wrap;               /* quebra de linha */
+  justify-content: space-around;/* espaço igual entre e ao redor dos itens*/
+  align-items: center;           /* Alinha itens ao centro na vertical (de cada linha)*/
+  align-content: space-between; /* espaço (vertical) entre linhas */
+  min-height: 60vh;
+  border: 2px dashed #999;
+  padding: 10px;
+  gap: 10px;
+}
+
+.item {
+  background: #007acc;
+  color: white;
+  padding: 20px;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* personalizando itens individualmente */
+.item:nth-child(2) {  /* segundo filho (item) do container*/
+  align-self: flex-start; /* sobe esse item para o topo */
+}
+
+.item:nth-child(4) { /* quarto filho (item) */
+  order: -1; /* esse item  vai aparecer antes dos outros */
+}
+
+.item:nth-child(5) {
+  flex-grow: 2;  /* ocupa o dobro do espaço disponível em relação aos outros */
+}
