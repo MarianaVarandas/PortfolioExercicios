@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+
+  /* repeat + minmax: 3 colunas iguais, entre 200px e 1fr */
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+
+  /*4 linhas com alturas variadas */
+  grid-template-rows: 60px auto auto 40px;
+
+  grid-template-areas:
+    "topo     topo      topo"
+    "menu     principal extra"
+    "lateral  principal extra"
+    "rodape   rodape    rodape";
+
+  gap: 10px;
+  height: 100vh; /*viewport hight - 100% da tela visível */
+  padding: 10px;
+}
+
+/* Áreas que foram nomeadas com grid-area */
+.topo { 
+  grid-area: topo;
+  background: #003366;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu { 
+  grid-area: menu;
+  background: #336699;
+  color: white;
+  padding: 10px;
+}
+
+.principal { 
+  grid-area: principal;
+  background: #f4f4f4;
+  padding: 10px;
+}
+
+.lateral { 
+  grid-area: lateral;
+  background: #cccccc;
+  padding: 10px;
+}
+
+.rodape { 
+  grid-area: rodape;
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* exemplo de uso do span */
+.extra {
+  grid-area: extra;
+  background: #ffcc00;
+  padding: 10px;
+  text-align: center;
+
+  /* ocupa 2 linhas: linha 2 e linha 3 */
+  grid-row: span 2;
+}

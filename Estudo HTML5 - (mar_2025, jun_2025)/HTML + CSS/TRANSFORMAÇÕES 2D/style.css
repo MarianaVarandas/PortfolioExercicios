@@ -5,10 +5,10 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex;   /* layout */
+  flex-wrap: wrap; /* quebra de linha se precisar*/
   justify-content: center;
-  gap: 30px;
+  gap: 30px; /*espaço entre quadrados*/
   padding: 50px;
 }
 
@@ -20,9 +20,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 0.5s ease;
-  border-radius: 8px;
-  cursor: pointer;
+  transition: transform 0.5s ease; /* as transformações serão animadas em 0,5 segundos*/
+  border-radius: 8px; /* borda arredondada*/
+  cursor: pointer; /* cursor mãozinha*/
 }
 
 /* TRANSLATE */
