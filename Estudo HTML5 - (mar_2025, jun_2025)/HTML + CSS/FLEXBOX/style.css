@@ -18,9 +18,9 @@ h1 {
 .container {
   display: flex;                 /* Ativa o Flexbox */
   flex-direction: row;           /* itens alinhados na horizontal */
-  flex-wrap: wrap;               /* quebra de linha */
+  flex-wrap: wrap;               /* quebra de linha (nesse caso não é necessário, mas deixei como exemplo pra consulta futura)*/
   justify-content: space-around;/* espaço igual entre e ao redor dos itens*/
-  align-items: center;           /* Alinha itens ao centro na vertical (de cada linha)*/
+  align-items: center;           /* Alinha itens (filhos) ao centro na vertical (de cada linha)*/
   align-content: space-between; /* espaço (vertical) entre linhas */
   min-height: 60vh;
   border: 2px dashed #999;
