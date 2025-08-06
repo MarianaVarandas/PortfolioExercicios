@@ -49,3 +49,31 @@ function calculoQuadrado (numero){
     let quadrado = numero * numero;
     return quadrado;
 }
+
+//7. Crie uma função que calcule o índice de massa corporal (IMC) de uma pessoa, a partir de sua altura, em metros, e peso, em quilogramas, que serão recebidos como parâmetro.
+
+function calculoIMC (peso,altura){
+    let imc = peso/(altura *altura)
+    return imc
+}
+
+//8. Crie uma função que converte um valor em dólar, passado como parâmetro, e retorna o valor equivalente em reais. Para isso, considere a cotação do dólar igual a R$4,80.
+
+function conversaoDolarReal (valorDolar) {
+    let valorReal = valorDolar * 4.8
+    return valorReal
+}
+
+//9. Crie uma função que mostre na tela a tabuada de um número dado como parâmetro.
+
+function tabuada (numero){
+    let multiplicador = 1;
+    let multiplicacao
+    
+    while (multiplicador <= 10) {
+        multiplicacao = numero * multiplicador
+        console.log(`${numero} * ${multiplicador} = ${multiplicacao}`)
+        multiplicador ++
+    }
+}
+
