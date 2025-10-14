@@ -29,6 +29,7 @@ O *PortfolioExercicios* contém práticas e desafios em diversas linguagens e te
 ---
 
 ⚠️ **Aviso**  
+
 Este repositório é uma iniciativa pessoal de estudos e prática de programação. Não se trata de projetos comerciais ou produtos prontos para produção.
 
 ---
