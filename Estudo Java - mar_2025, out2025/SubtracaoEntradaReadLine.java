@@ -1,4 +1,6 @@
-public class Subtracao {
+//março/2025 - curso Java IFRS
+// lembrar que readLine não roda em IDE
+public class SubtracaoEntradaReadLine {
 
 	public static void main(String[] args) {
 

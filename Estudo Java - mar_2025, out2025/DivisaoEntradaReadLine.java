@@ -1,4 +1,6 @@
-public class Divisao {
+// março/2025 - curso Java IFRS
+// lembrar que readLine não roda em IDE
+public class DivisaoEntradaReadLine {
 	public static void main (String[] args) {
 
 		double num_01, num_02, res;
