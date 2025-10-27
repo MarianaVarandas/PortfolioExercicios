@@ -1,6 +1,6 @@
 // esse arquivo não pretende ser funcional. É apenas para testar as classes criadas e criar objetos*/
 
-package estudandoClasses;
+package classes.estudo;
 
 public class TestandoObjetos {
     public static void main(String[] args) {
