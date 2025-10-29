@@ -11,7 +11,7 @@ O *PortfolioExercicios* contém práticas e desafios em diversas linguagens e te
 ---
 
 🧩 **Funcionalidades / Conteúdo**  
-- Exercícios de lógica e algoritmos em Pseudocódigo e Portugol  
+- Exercícios de lógica e algoritmos  
 - Scripts em Python, JavaScript e Java com comentários explicativos  
 - Projetos web simples em HTML e CSS  
 - Organização por linguagem/tema para fácil navegação e estudo  
@@ -19,7 +19,7 @@ O *PortfolioExercicios* contém práticas e desafios em diversas linguagens e te
 ---
 
 🧩 **Tecnologias**  
- 
+
 - Python  
 - JavaScript  
 - Java  
