@@ -6,7 +6,7 @@ Este repositório reúne os exercícios e projetos que tenho desenvolvido ao lon
 ---
 
 🧠 **Sobre o projeto**  
-O *PortfolioExercicios* contém práticas e desafios em diversas linguagens e tecnologias, incluindo Pseudocódigo, Portugol, Python, HTML, CSS, JavaScript e Java. Cada pasta possui exercícios organizados, com comentários e soluções, permitindo revisar conceitos e demonstrar habilidades adquiridas.
+O *PortfolioExercicios* contém práticas e desafios em diversas linguagens e tecnologias, incluindo Python, HTML, CSS, JavaScript e Java. Cada pasta possui exercícios organizados, com comentários e soluções, permitindo revisar conceitos e demonstrar habilidades adquiridas.
 
 ---
 
