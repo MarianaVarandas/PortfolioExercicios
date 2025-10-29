@@ -19,7 +19,7 @@ O *PortfolioExercicios* contém práticas e desafios em diversas linguagens e te
 ---
 
 🧩 **Tecnologias**  
-- Pseudocódigo / Portugol  
+ 
 - Python  
 - JavaScript  
 - Java  
