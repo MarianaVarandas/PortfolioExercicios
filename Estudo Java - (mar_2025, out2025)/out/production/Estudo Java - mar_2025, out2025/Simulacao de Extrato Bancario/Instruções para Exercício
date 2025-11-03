@@ -1,0 +1,87 @@
+Desenvolver um programa em Java que simule uma conta bancária virtual, permitindo ao usuário realizar operações como consultar saldo, receber e transferir valores.
+
+Requisitos:
+
+Dados Iniciais do Cliente:
+O programa deve iniciar exibindo os dados do cliente, como nome, tipo de conta e saldo inicial.
+Exemplo:
+
+***********************
+Dados iniciais do cliente:
+
+Nome: Jacqueline Oliveira
+Tipo conta: Corrente
+Saldo inicial: R$ 2500,00
+***********************
+Menu de Opções:
+Em seguida, o programa deve apresentar um menu com as seguintes opções:
+
+Operações
+
+1 - Consultar saldo
+2 - Receber valor
+3 - Transferir valor
+4 - Sair
+
+Digite a opção desejada:
+
+Consultar Saldo:
+
+Se o usuário digitar "1", o programa deve exibir o saldo atual da conta.
+Exemplo:
+
+Saldo atual: R$ 2500,00
+
+Receber Valor:
+
+Se o usuário digitar "2", o programa deve solicitar o valor a ser recebido.
+Após o usuário inserir o valor, o programa deve atualizar o saldo da conta e exibir o novo saldo.
+Exemplo:
+
+
+Digite a opção desejada:
+2
+
+Informe o valor a receber:
+700
+
+Saldo atualizado: R$ 3200,00
+
+
+Transferir Valor:
+
+Se o usuário digitar "3", o programa deve solicitar o valor a ser transferido.
+Se o valor a ser transferido for menor ou igual ao saldo disponível, o programa deve atualizar o saldo da conta e exibir o novo saldo.
+Caso contrário, o programa deve exibir uma mensagem informando que não há saldo suficiente para realizar a transferência.
+Exemplos:
+
+
+Digite a opção desejada:
+3
+
+Informe o valor que deseja transferir:
+1000
+
+Saldo atualizado: R$ 1500,00
+
+
+Digite a opção desejada:
+3
+
+Informe o valor que deseja transferir:
+5000
+
+Não há saldo suficiente para fazer essa transferência.
+Sair:
+
+Se o usuário digitar "4", o programa deve ser encerrado.
+
+Opção Inválida:
+Se o usuário digitar um número diferente de 1, 2, 3 ou 4, o programa deve exibir a mensagem "Opção inválida".
+
+Dicas:
+
+Utilize variáveis para armazenar os dados do cliente, como nome, tipo de conta e saldo.
+Use a estrutura de controle switch para implementar o menu de opções.
+Utilize estruturas de repetição (como while ou do-while) para manter o programa em execução até que o usuário escolha a opção "Sair".
+Valide se o valor a ser transferido é menor ou igual ao saldo disponível antes de realizar a operação.
