@@ -1,5 +1,4 @@
-package exercicioAlterandoToString;
-import exercicioAlterandoToString.Pessoa;
+package AlterandoToString;
 
 
 import java.util.ArrayList;
