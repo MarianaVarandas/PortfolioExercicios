@@ -1,0 +1,25 @@
+Desafio: Aplicação de Compras com Cartão de Crédito
+
+Crie uma aplicação Java que simule o lançamento de compras em um cartão de crédito, seguindo os requisitos abaixo:
+
+Limite do Cartão:
+
+Solicite ao usuário que informe o limite do cartão de crédito.
+Menu de Compras:
+
+Implemente um menu que permita ao usuário adicionar compras até que ele decida sair ou o limite do cartão seja atingido.
+Para cada compra, solicite a descrição e o valor.
+Informe ao usuário se a compra foi realizada com sucesso ou se o saldo é insuficiente.
+Lista de Compras:
+
+Armazene as compras realizadas em uma lista.
+Exibição e Ordenação:
+
+Ao finalizar as compras (quando o usuário decidir sair ou o limite for atingido), exiba a lista de compras realizadas, ordenadas por valor (do menor para o maior).
+Mostre o saldo restante no cartão.
+Requisitos Adicionais:
+
+Utilize os conceitos de listas e ordenação aprendidos no curso.
+A interface com o usuário pode ser via terminal (linha de comando).
+Explore e aplique seus conhecimentos para criar uma solução eficiente e organizada.
+Lembre-se que este é um desafio para você praticar e aplicar o que aprendeu. Tente resolver sozinho antes de buscar ajuda!

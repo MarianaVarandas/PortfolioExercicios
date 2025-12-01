@@ -1,0 +1,118 @@
+Enunciado: Desafio de POO - Minhas Músicas
+Objetivo: Criar um sistema simples para simular uma plataforma de áudio, como o Spotify, capaz de lidar com diferentes tipos de áudio (Músicas e Podcasts) e classificá-los com base em sua popularidade.
+
+Conceitos a Aplicar: Herança, Polimorfismo, Sobrescrita de Métodos e Encapsulamento.
+
+Estrutura do Projeto
+O projeto deve ser organizado em um pacote principal. Dentro dele, crie dois subpacotes:
+
+minhasmusicas.modelo
+minhasmusicas.principal
+
+Parte 1: A Classe-Pai Audio
+No pacote modelos, crie a classe Audio. Esta será a superclasse (classe-pai) para todos os tipos de áudio.
+
+Atributos:
+
+titulo (String)
+
+totalReproducoes (int)
+
+totalCurtidas (int)
+
+Métodos:
+
+curtir(): Este metodo deve incrementar o contador totalCurtidas em 1.
+
+reproduzir(): Este metodo deve incrementar o contador totalReproducoes em 1.
+
+Getters para todos os atributos (ex: getTitulo(), getTotalReproducoes(), etc.).
+
+Setters apenas para titulo. Os contadores não devem ter setters públicos.
+
+Metodo de Classificação (Abstrato):
+
+A classe Audio deve ter um metodo getClassificacao() que retorna um int. Por enquanto, este metodo pode retornar 0.
+
+Parte 2: As Classes-Filhas (Herança)
+No mesmo pacote modelos, crie as seguintes classes que herdam de Audio:
+
+A) Classe Musica
+Herda de Audio.
+
+Atributos Específicos:
+
+artista (String)
+
+album (String)
+
+genero (String)
+
+Getters e Setters para os novos atributos.
+
+Sobrescrita (Override):
+
+Sobrescreva o metodo getClassificacao().
+
+Lógica: Se a música tiver mais de 2000 reproduções, o metodo deve retornar 10. Caso contrário, deve retornar 8.
+
+B) Classe Podcast
+Herda de Audio.
+
+Atributos Específicos:
+
+apresentador (String)
+
+descricao (String)
+
+Getters e Setters para os novos atributos.
+
+Sobrescrita (Override):
+
+Sobrescreva o metodo getClassificacao().
+
+Lógica: Se o podcast tiver mais de 500 curtidas, o metodo deve retornar 10. Caso contrário, deve retornar 8.
+
+Parte 3: A Classe de Análise (Polimorfismo)
+No pacote modelos, crie uma nova classe chamada MinhasPreferidas.
+
+Metodo inclui(Audio audio):
+
+Esta classe deve ter um único metodo que recebe um objeto do tipo Audio como parâmetro (aqui está o polimorfismo!).
+
+Lógica: Dentro deste metodo, ele deve verificar a classificação do áudio recebido (audio.getClassificacao()):
+
+Se a classificação for 10, imprima no console: "[Nome do Título]" é sucesso absoluto e preferido por todos!
+
+Se a classificação for 8 (ou 9), imprima: "[Nome do Título]" também é um dos que todo mundo está curtindo.
+
+Se a classificação for menor que 8, imprima: "[Nome do Título]" é uma ótima opção para ouvir mais tarde.
+
+Parte 4: A Classe Principal (Teste)
+No pacote principal, crie a classe Principal com um metodo main.
+
+Crie uma instância de Musica (ex: "Bohemian Rhapsody"). Defina seu artista, álbum, etc.
+
+Crie uma instância de Podcast (ex: "Podpah"). Defina seu apresentador, etc.
+
+Simule o uso:
+
+Use um loop for para chamar o metodo reproduzir() da sua música 3000 vezes.
+
+Use um loop for para chamar o metodo curtir() da sua música 1000 vezes.
+
+Use um loop for para chamar o metodo reproduzir() do seu podcast 800 vezes.
+
+Use um loop for para chamar o metodo curtir() do seu podcast 600 vezes.
+
+Teste o Polimorfismo:
+
+Crie uma instância da classe MinhasPreferidas.
+
+Chame o metodo preferidas.inclui() passando sua instância de Musica.
+
+Chame o metodo preferidas.inclui() passando sua instância de Podcast.
+
+Verifique a Saída:
+
+Observe se o console imprime as mensagens corretas de classificação para a música (que deve ser 10) e para o podcast (que também deve ser 10).
