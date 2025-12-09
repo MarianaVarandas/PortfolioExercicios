@@ -1,4 +1,4 @@
-package Exceptions.senha;
+package Exceptions.github;
 
 public class Usuario {
     private String nome;

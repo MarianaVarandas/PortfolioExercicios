@@ -1,7 +1,5 @@
 package Exceptions.github;
 
-import Exceptions.senha.Usuario;
-import Exceptions.senha.UsuarioAPI;
 import com.google.gson.Gson;
 
 import java.io.IOException;
@@ -18,7 +16,7 @@ public class MainGithub {
         var nomeUsuario = input.nextLine();
 
         try {
-            String endereco = ("https://api.github.com/users/" + nomeUsuario);
+            String endereco = ("https://api.github.com/users/" + nomeUsuario.replace(" ", ""));
             HttpClient client = HttpClient.newHttpClient();
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(URI.create(endereco))

@@ -1,4 +1,4 @@
-package Exceptions.senha;
+package Exceptions.github;
 
 public record UsuarioAPI(String login, String avatar_url, String html_url) {
 
