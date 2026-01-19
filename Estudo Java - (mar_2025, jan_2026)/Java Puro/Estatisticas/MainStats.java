@@ -1,9 +1,6 @@
 package Estatisticas;
 
-import java.util.Arrays;
-import java.util.IntSummaryStatistics;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 
@@ -23,7 +20,7 @@ public class MainStats {
 
         List<String> palavras = Arrays.asList("java", "stream", "lambda", "code");
 
-        Map<Integer, List <String>> subPorTamanho = palavras.stream() //Crie uma variável chamada resultado. Ela vai ser um Mapa onde as etiquetas são Números Inteiros e, dentro de cada etiqueta, haverá uma Lista de Palavras."
+        Map<Integer, List <String>> subPorTamanho = palavras.stream() //Crie uma variável chamada subPorTamanho. Ela vai ser um Mapa onde as etiquetas são Números Inteiros e, dentro de cada etiqueta, haverá uma Lista de Palavras."
                 .collect(Collectors.groupingBy(p -> p.length()));
 
 
@@ -80,6 +77,29 @@ public class MainStats {
 
         System.out.println(reagruop);
 
+        //7. Dada a lista de produtos acima, conte quantos produtos há em cada categoria e armazene em um Map<String, Long>.
+
+        Map<String, Long> quantidade = produtos3.stream()
+                .collect(Collectors.groupingBy(p-> p.getCategoria(), Collectors.counting()));
+
+        System.out.println(quantidade);
+
+        //8. Dada a lista de produtos acima, encontre o produto mais caro de cada categoria e armazene o resultado em um Map<String, Optional<Produto>>.
+
+        Map<String, Optional<ProdutoStats>> maisCaro = produtos3.stream()
+                .collect(Collectors.groupingBy( p -> p.getCategoria(), // a chave = categoria
+                Collectors.maxBy( // a ação = pegar o maior
+                        Comparator.comparingDouble(p -> p.getPreco()) // o maior o que? preço
+                )));
+
+        System.out.println(maisCaro);
+
+        //9. Dada a lista de produtos acima, calcule o total dos preços dos produtos em cada categoria e armazene o resultado em um Map<String, Double>.
+
+        Map<String, Double> total = produtos3.stream()
+                .collect(Collectors.groupingBy( p -> p.getCategoria(), Collectors.summingDouble(p -> p.getPreco())));
+
+        System.out.println(total);
 
 
 
