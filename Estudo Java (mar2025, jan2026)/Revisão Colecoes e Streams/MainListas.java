@@ -105,6 +105,28 @@ public class MainListas {
 
         System.out.println("Valor total com imposto de 8%: " + precosComImposto);
 
+        //exercício 10
+
+        List<Double> notas = List.of(7.5, 8.0, 6.5, 9.0, 10.0);
+
+        var somaNotas = notas.stream()
+                .reduce(0.0, Double:: sum);
+
+        var media = somaNotas/ notas.size();
+
+        var min = notas.stream()
+                .min(Comparator.naturalOrder())
+                .orElse(0.0); // pra evitar que na saída ele coloque o optional
+
+        var max = notas.stream()
+                .max(Comparator.naturalOrder())
+                .orElse(0.0);
+
+        System.out.println("A média das notas é: " + media);
+        System.out.println("A menor nota foi: " + min);
+        System.out.println("A maior nota foi: " + max);
+
+
 
 
 
