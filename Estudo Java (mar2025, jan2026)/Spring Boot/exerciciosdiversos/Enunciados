@@ -1,0 +1,38 @@
+1 - Imagine que você tem uma lista de strings. Algumas das strings são números, mas outras não. Queremos converter a lista de strings para uma lista de números. Se a conversão falhar, você deve ignorar o valor. Por exemplo, na lista a seguir, a saída deve ser [10, 20]:
+
+List<String> input = Arrays.asList("10", "abc", "20", "30x");
+
+
+2 - Implemente um método que recebe um número inteiro dentro de um Optional. Se o número estiver presente e for positivo, calcule seu quadrado. Caso contrário, retorne Optional.empty.
+
+public class Main {
+    public static void main(String[] args) {
+       System.out.println(processaNumero(Optional.of(5))); // Saída: Optional[25]
+       System.out.println(processaNumero(Optional.of(-3))); // Saída: Optional.empty
+       System.out.println(processaNumero(Optional.empty())); // Saída: Optional.empty
+
+
+}
+public static Optional<Integer> processaNumero(Optional<Integer> numero) {
+    // Implementar aqui
+}
+}
+
+
+3 - Implemente um método que recebe uma String representando um nome completo separado por espaços. O método deve retornar o primeiro e o último nome após remover os espaços desnecessários.
+
+public class Main {
+    public static void main(String[] args) {
+           System.out.println(obterPrimeiroEUltimoNome("  João Carlos Silva   ")); // Saída: "João Silva"
+System.out.println(obterPrimeiroEUltimoNome("Maria   ")); // Saída: "Maria"
+
+
+    }
+
+public static String obterPrimeiroEUltimoNome(String nomeCompleto) {
+    // Implementar aqui
+}
+
+}
+
+
